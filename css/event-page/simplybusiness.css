@@ -1,0 +1,1295 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Poppins:wght@100;500;600;800;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Jost:wght@300;400&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+body,
+html {
+    background: #16bffd;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cb3066, #16bffd);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cb3066, #16bffd);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.simplybusiness__back a img {
+    width: 60px;
+    height: 60px;
+    font-weight: 600;
+    left: 3%;
+    z-index: 999;
+    position: absolute;
+    top: 3%;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+li {
+    text-align: left;
+}
+
+.body {
+    max-width: 90vw;
+    display: flex;
+    padding: 6px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.simplybusiness__header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    text-align: center;
+}
+
+.simplybusiness__header img {
+    height: 100px;
+}
+
+.simplybusiness__header__container {
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+}
+
+.simplybusiness__header__container .simplybusiness__header__title-container {
+    /* width: 250px; */
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: -80px 20px;
+}
+
+.simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__title .block {
+    width: 0%;
+    height: inherit;
+    background: #ffb510;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    display: flex;
+}
+
+.simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__title h1 {
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 32px;
+    -webkit-animation: mainFadeIn 2s forwards;
+    -o-animation: mainFadeIn 2s forwards;
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+.simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__title h1 span {
+    width: 0px;
+    height: 0px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffb510;
+    -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 2s;
+    margin-left: 5px;
+    margin-top: -10px;
+    position: absolute;
+    bottom: 13px;
+    right: -12px;
+}
+
+.simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: -10px;
+}
+
+.simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role .block {
+    width: 0%;
+    height: inherit;
+    background: #e91e63;
+    position: absolute;
+    animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 2s;
+    display: flex;
+}
+
+.simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role p {
+    animation: secFadeIn 2s forwards;
+    animation-delay: 3.2s;
+    opacity: 0;
+    font-weight: 400;
+    font-family: "Lato";
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.body__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 40px;
+}
+
+.body__description p {
+    font-size: 1.2rem;
+}
+
+.body__description>p {
+    color: white;
+    font-weight: 400;
+    top: 0;
+    max-width: 100vw;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.body__coordinators {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 40px;
+    color: white;
+    gap: 4rem;
+    font-family: "Jost", sans-serif;
+    justify-content: space-around;
+}
+
+.gallery {
+    --g: 8px;
+    /* the gap */
+    --s: 400px;
+    margin-left: 50px;
+    /* the size */
+    display: grid;
+    border-radius: 50%;
+}
+
+.gallery>img {
+    grid-area: 1/1;
+    width: 400px;
+    margin-top: -260px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(var(--_x, 0), var(--_y, 0));
+    cursor: pointer;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s, z-index 0s 0.3s;
+}
+
+.gallery img:hover {
+    --_i: 1;
+    z-index: 1;
+    transition: transform 0.2s, clip-path 0.3s 0.2s, z-index 0s;
+}
+
+.gallery:hover img {
+    transform: translate(0, 0);
+}
+
+.gallery>img:nth-child(1) {
+    clip-path: polygon( 50% 50%, calc(50% * var(--_i, 0)) calc(120% * var(--_i, 0)), 0 calc(100% * var(--_i, 0)), 0 0, 100% 0, 100% calc(100% * var(--_i, 0)), calc(100% - 50% * var(--_i, 0)) calc(120% * var(--_i, 0)));
+    --_y: calc(-1 * var(--g));
+}
+
+.gallery>img:nth-child(2) {
+    clip-path: polygon( 50% 50%, calc(100% - 120% * var(--_i, 0)) calc(50% * var(--_i, 0)), calc(100% - 100% * var(--_i, 0)) 0, 100% 0, 100% 100%, calc(100% - 100% * var(--_i, 0)) 100%, calc(100% - 120% * var(--_i, 0)) calc(100% - 50% * var(--_i, 0)));
+    --_x: var(--g);
+}
+
+.gallery>img:nth-child(3) {
+    clip-path: polygon( 50% 50%, calc(100% - 50% * var(--_i, 0)) calc(100% - 120% * var(--_i, 0)), 100% calc(100% - 120% * var(--_i, 0)), 100% 100%, 0 100%, 0 calc(100% - 100% * var(--_i, 0)), calc(50% * var(--_i, 0)) calc(100% - 120% * var(--_i, 0)));
+    --_y: var(--g);
+}
+
+.gallery>img:nth-child(4) {
+    clip-path: polygon( 50% 50%, calc(120% * var(--_i, 0)) calc(50% * var(--_i, 0)), calc(100% * var(--_i, 0)) 0, 0 0, 0 100%, calc(100% * var(--_i, 0)) 100%, calc(120% * var(--_i, 0)) calc(100% - 50% * var(--_i, 0)));
+    --_x: calc(-1 * var(--g));
+}
+
+.body__rules {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 80px;
+    height: 17vh;
+    gap: 30px;
+    color: white;
+    margin-bottom: 120px;
+    flex-direction: row;
+}
+
+.coordinate {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -320px 170px;
+    justify-content: center;
+    float: left;
+    font-size: 19px;
+    color: white;
+    flex-direction: column;
+}
+
+.body__rules h2 {
+    color: black;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+h2 {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.body__rounds {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 40px;
+    animation: mymove 2s ease-in-out;
+}
+
+@keyframes mymove {
+    from {
+        top: 0px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.body__round_1,
+.body__round_2 {
+    color: white;
+}
+
+.body__round_1 {
+    margin-right: 20px;
+}
+
+.body__round_2 {
+    margin-left: 10px;
+}
+
+.body__rounds h2 {
+    margin-bottom: 10px;
+}
+
+.body__register-button__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 30px;
+}
+
+.body__register-button__container a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    width: 220px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    background-color: indigo;
+    outline: none;
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.body__register-button__container button {
+    margin: 20px 30px;
+}
+
+button:hover {
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+button:hover a {
+    color: indigo;
+    letter-spacing: 4px;
+}
+
+.body__list-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    animation: mymove 2s ease-in-out;
+    margin: 60px 60px;
+    gap: 20px;
+}
+
+.body__list-button h2 {
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    align-items: flex-end;
+}
+
+.body__list-button button {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.body__list-button button:hover {
+    background-color: orangered;
+    cursor: no-drop;
+    border: none;
+    outline: none;
+}
+
+li {
+    color: white;
+    font-size: 19px;
+}
+
+@keyframes mainBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes secBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        width: 0px;
+        height: 0px;
+        background: #e9d856;
+        border: 0px solid #ddd;
+        opacity: 0;
+    }
+    50% {
+        width: 10px;
+        height: 10px;
+        background: #e9d856;
+        opacity: 1;
+        bottom: 45px;
+    }
+    65% {
+        width: 7px;
+        height: 7px;
+        bottom: 0px;
+        width: 15px;
+    }
+    80% {
+        width: 10px;
+        height: 10px;
+        bottom: 20px;
+    }
+    100% {
+        width: 7px;
+        height: 7px;
+        background: #e9d856;
+        border: 0px solid #222;
+        bottom: 13px;
+    }
+}
+
+@keyframes secFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 1424px) {
+    .simplybusiness__header__container {
+        margin: 30px 80px;
+    }
+    body {
+        overflow: hidden;
+        margin-left: 20px;
+    }
+    .body__about {
+        flex-wrap: wrap;
+        margin: 20px 10px;
+        padding: 4px;
+    }
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role p {
+        margin-left: -1px;
+        text-align: left;
+    }
+    .body__coordinators {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 170px;
+    }
+    .gallery {
+        align-items: center;
+    }
+    .gallery>img {
+        grid-area: 1/1;
+        width: 300px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        transform: translate(var(--_x, 0), var(--_y, 0));
+        cursor: pointer;
+        z-index: 0;
+        transition: 0.3s, z-index 0s 0.3s;
+        align-items: center;
+        margin-bottom: 20px;
+        margin: 30px -30px;
+    }
+    .body__about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100vw;
+    }
+    .body__rounds {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin: 40px 40px;
+    }
+    .body__rules {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 40px;
+        color: white;
+        flex-direction: row;
+        font-size: 17px;
+        text-align: left;
+    }
+    .coordinate {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -20px 80px;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+    .body__round_1 {
+        margin-bottom: 30px;
+    }
+    .body__round_2 {
+        margin-top: 30px;
+    }
+    .body__list-button {
+        margin-top: 130px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .body__register-button__container button {
+        margin: 30px 10px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .simplybusiness__header__container {
+        display: flex;
+        top: 0;
+        justify-content: space-between;
+        margin: 90px 20px;
+    }
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role p {
+        text-align: left;
+        margin-top: 15px;
+    }
+    .body__about {
+        flex-wrap: wrap;
+        margin: 20px 10px;
+        padding: 4px;
+    }
+    .body__coordinators {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 80px;
+    }
+    .gallery {
+        align-items: center;
+    }
+    .gallery>img {
+        grid-area: 1/1;
+        width: 300px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        transform: translate(var(--_x, 0), var(--_y, 0));
+        cursor: pointer;
+        z-index: 0;
+        transition: 0.3s, z-index 0s 0.3s;
+        align-items: center;
+        margin-bottom: 20px;
+        margin: 30px -30px;
+    }
+    .body__about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100vw;
+    }
+    .body__rounds {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .body__rules {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 100px;
+        justify-content: center;
+        color: white;
+        flex-direction: row;
+        font-size: 17px;
+    }
+    .body__rules li {
+        width: 470px;
+    }
+    .coordinate {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 80px;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+        font-size: 17px;
+    }
+    .body__round_1 {
+        margin-bottom: 30px;
+    }
+    .body__round_2 {
+        margin-top: 30px;
+    }
+    .body__list-button {
+        margin-top: 205px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body__list-button h2 {
+        position: absolute;
+        font-size: 13px;
+        letter-spacing: 10px;
+        margin-top: -190px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .simplybusiness__back a img {
+        width: 50px;
+        height: 50px;
+        font-weight: 600;
+        left: 6%;
+        z-index: 999;
+        position: absolute;
+        top: 4%;
+        border-radius: 30px;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role p {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin: -20px 10px;
+    }
+    .simplybusiness__header__container {
+        margin-top: 50px;
+    }
+    .body__about {
+        flex-wrap: wrap;
+        margin: 10px 10px;
+        padding: 4px;
+    }
+    .body__coordinators {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 220px;
+    }
+    .body__description p {
+        margin-top: 10px;
+    }
+    .gallery {
+        align-items: center;
+    }
+    .gallery>img {
+        grid-area: 1/1;
+        width: 300px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        transform: translate(var(--_x, 0), var(--_y, 0));
+        cursor: pointer;
+        z-index: 0;
+        transition: 0.3s, z-index 0s 0.3s;
+        align-items: center;
+        margin-bottom: 20px;
+        margin: 30px -30px;
+    }
+    .body__about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100vw;
+    }
+    .body__rounds {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 95%;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .body__rules {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 80px;
+        justify-content: center;
+        color: white;
+        flex-direction: row;
+        font-size: 15px;
+    }
+    .body__rules li {
+        width: 400px;
+    }
+    .coordinate {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px 80px;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+    .body__round_1 {
+        margin-bottom: 30px;
+    }
+    .body__round_2 {
+        margin-top: 30px;
+    }
+    .body__list-button {
+        margin-top: 270px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body__list-button h2 {
+        position: absolute;
+        font-size: 13px;
+        letter-spacing: 10px;
+        margin-top: -190px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .simplybusiness__header img {
+        height: 50px;
+        margin-top: 30px;
+    }
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role h1 {
+        font-size: 17px;
+    }
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role p {
+        font-weight: 500;
+        font-family: "Lato";
+        color: #ffffff;
+        margin-top: -25px;
+        margin-left: -1px;
+        font-size: 9px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    .body__about {
+        flex-wrap: wrap;
+        margin: -30px 10px;
+        padding: 4px;
+    }
+    .body__description p {
+        margin-top: 10px;
+        margin-right: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .gallery {
+        align-items: center;
+    }
+    .gallery>img {
+        grid-area: 1/1;
+        width: 300px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        transform: translate(var(--_x, 0), var(--_y, 0));
+        cursor: pointer;
+        z-index: 0;
+        transition: 0.3s, z-index 0s 0.3s;
+        align-items: center;
+        margin-bottom: 20px;
+        margin: 30px -180px;
+    }
+    .body__about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100vw;
+    }
+    .body__rounds {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 85%;
+        margin: 40px 50px;
+    }
+    .body__rules {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 80px;
+        justify-content: center;
+        color: white;
+        flex-direction: row;
+        font-size: 15px;
+    }
+    .body__rules li {
+        width: 310px;
+        font-size: 1rem;
+    }
+    li {
+        margin-top: 10px;
+    }
+    .body__rules h2 {
+        margin-left: 30px;
+    }
+    .coordinate {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px 40px;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+    .body__round_1 {
+        margin-bottom: 30px;
+    }
+    .body__round_2 {
+        margin-top: 30px;
+    }
+    .body__list-button {
+        margin: 280px auto;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body__list-button h2 {
+        position: absolute;
+        font-size: 13px;
+        letter-spacing: 10px;
+        margin-top: -190px;
+    }
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__title h1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .simplybusiness__back a img {
+        width: 50px;
+        height: 50px;
+        font-weight: 600;
+        left: 4%;
+        top: -1%;
+        z-index: 999;
+        position: absolute;
+        border-radius: 30px;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__title h1 {
+        font-size: 18px;
+    }
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role p {
+        font-size: 8px;
+        margin: -10px 0px;
+    }
+    .body__about {
+        flex-wrap: wrap;
+        margin: -60px 10px;
+        padding: 4px;
+        gap: 20px;
+    }
+    .body__coordinators {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 220px;
+    }
+    .body__description p {
+        margin: 10px 40px;
+        font-size: 17px;
+        text-align: center;
+    }
+    .gallery {
+        align-items: center;
+    }
+    .gallery>img {
+        grid-area: 1/1;
+        width: 250px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        transform: translate(var(--_x, 0), var(--_y, 0));
+        cursor: pointer;
+        z-index: 0;
+        transition: 0.3s, z-index 0s 0.3s;
+        align-items: center;
+        margin-bottom: 20px;
+        margin: 30px -150px;
+    }
+    .body__about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100vw;
+    }
+    .body__rounds {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    .body__rounds p {
+        font-size: 15px;
+    }
+    .body__rounds h2 {
+        margin-left: 20px;
+        font-size: 1rem;
+    }
+    .body__rules {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 80px;
+        justify-content: center;
+        color: white;
+        flex-direction: row;
+        font-size: 14px;
+    }
+    .body__rules li {
+        width: 260px;
+        font-size: 16px;
+    }
+    li {
+        margin-top: 10px;
+    }
+    .coordinate {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 30px;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .coordinate li {
+        font-size: 18px;
+    }
+    .body__round_1 {
+        margin-bottom: 30px;
+    }
+    .body__round_2 {
+        margin-top: 30px;
+    }
+    .body__list-button {
+        margin-top: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body__list-button h2 {
+        position: absolute;
+        font-size: 13px;
+        letter-spacing: 10px;
+        margin-top: -150px;
+    }
+    button {
+        width: 190px;
+        height: 35px;
+    }
+    .body__list-button button {
+        font-size: 0.8rem;
+    }
+    .body__list-button h2 {
+        font-size: 10px;
+    }
+    button a {
+        font-size: 13px;
+    }
+    .body__register-button__container button {
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__title h1 {
+        font-size: 17px;
+    }
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role p {
+        font-size: 8px;
+        letter-spacing: 3px;
+        margin-top: -15px;
+        margin-left: 0px;
+    }
+    .body__about {
+        flex-wrap: wrap;
+        margin: -50px 10px;
+        padding: 4px;
+    }
+    .body__coordinators {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 220px;
+    }
+    .body__description p {
+        margin: 10px 35px;
+        font-size: 15px;
+    }
+    .gallery {
+        align-items: center;
+    }
+    .gallery>img {
+        grid-area: 1/1;
+        width: 250px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        transform: translate(var(--_x, 0), var(--_y, 0));
+        cursor: pointer;
+        z-index: 0;
+        transition: 0.3s, z-index 0s 0.3s;
+        align-items: center;
+        margin-bottom: 20px;
+        margin: 30px -150px;
+    }
+    .body__about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100vw;
+    }
+    .body__rounds {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    .body__rounds p {
+        font-size: 15px;
+    }
+    .body__rounds h2 {
+        margin-left: 20px;
+        font-size: 1rem;
+    }
+    .body__rules {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 80px;
+        justify-content: center;
+        color: white;
+        flex-direction: row;
+        font-size: 14px;
+    }
+    .body__rules li {
+        width: 250px;
+        font-size: 16px;
+    }
+    .body__rules h2 {
+        margin-left: -40px;
+    }
+    .coordinate {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 30px;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .coordinate li {
+        font-size: 15px;
+        margin-top: 0;
+    }
+    li {
+        margin-top: 10px;
+    }
+    .body__round_1 {
+        margin-bottom: 30px;
+    }
+    .body__round_2 {
+        margin-top: 30px;
+    }
+    .body__list-button {
+        margin-top: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body__list-button h2 {
+        position: absolute;
+        font-size: 13px;
+        letter-spacing: 10px;
+        margin-top: -160px;
+    }
+    button {
+        width: 170px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .body__list-button button {
+        font-size: 0.7rem;
+    }
+    .body__list-button h2 {
+        font-size: 10px;
+    }
+    .body__register-button__container button a {
+        font-size: 12px;
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__title h1 {
+        font-size: 16px;
+    }
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role p {
+        font-size: 8px;
+        letter-spacing: 1px;
+        margin-top: -24px;
+        margin-left: 0px;
+    }
+    .body__about {
+        flex-wrap: wrap;
+        margin: 10px 10px;
+    }
+    .body__coordinators {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 220px;
+    }
+    .body__description p {
+        margin: 10px 40px;
+        font-size: 14px;
+    }
+    .gallery {
+        align-items: center;
+    }
+    .gallery>img {
+        grid-area: 1/1;
+        width: 200px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        transform: translate(var(--_x, 0), var(--_y, 0));
+        cursor: pointer;
+        z-index: 0;
+        transition: 0.3s, z-index 0s 0.3s;
+        align-items: center;
+        margin-bottom: 20px;
+        margin: 30px -130px;
+    }
+    .body__about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100vw;
+        margin-top: -70px;
+    }
+    .body__rounds {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: 40px 10px;
+    }
+    .body__rounds p {
+        font-size: 13px;
+    }
+    .body__rounds h2 {
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+    .body__rules {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 80px;
+        justify-content: center;
+        color: white;
+        flex-direction: row;
+        font-size: 14px;
+    }
+    .body__rules li {
+        width: 200px;
+        font-size: 16px;
+    }
+    .coordinate {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px 20px;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .coordinate li {
+        font-size: 13px;
+    }
+    .body__round_1 {
+        margin-bottom: 30px;
+    }
+    .body__round_2 {
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+    .body__list-button {
+        margin-top: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body__list-button h2 {
+        position: absolute;
+        font-size: 13px;
+        letter-spacing: 10px;
+        margin-top: -160px;
+    }
+    button {
+        width: 170px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .body__list-button button {
+        font-size: 0.6rem;
+    }
+    .body__list-button h2 {
+        font-size: 10px;
+    }
+    button a {
+        font-size: 7px;
+    }
+    .body__register-button__container button:hover a {
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__title h1 {
+        font-size: 12px;
+    }
+    .simplybusiness__header__container .simplybusiness__header__title-container .simplybusiness__header__role p {
+        font-size: 8px;
+        letter-spacing: 2px;
+        margin-top: -25px;
+        margin-left: 0px;
+    }
+    .body__rounds {
+        width: 90%;
+        margin-left: 20px;
+    }
+}

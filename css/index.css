@@ -1,0 +1,1544 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Poppins:wght@100;500;600;800;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Jost:wght@300;400&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: normal;
+}
+
+.container {
+    background-image: url("../images/bg.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    padding: 0 8%;
+    width: 100vw;
+    height: 120vh;
+}
+
+.container__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+    gap: 30px;
+}
+
+.container__header__t-logo {
+    height: 120px;
+    padding: 20px 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container__header__rec-logo {
+    height: 120px;
+    padding: 20px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.container__header__l-logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 50px;
+}
+
+.hero {
+    top: 60%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 999;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    z-index: 999;
+}
+
+.hero__title {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.hero__countdown span {
+    color: #ff375f;
+}
+
+.hero__about-button,
+.hero__events-button {
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    transition: all 0.4s ease-in-out;
+    gap: 30px;
+    z-index: 999;
+}
+
+.hero button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.hero button:hover {
+    background-color: #880053;
+    outline: none;
+}
+
+.hero__branch {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.hero__tagline {
+    letter-spacing: 7px;
+    margin-top: -1px;
+    text-transform: uppercase;
+}
+
+.contact__tagline_1 {
+    letter-spacing: 11px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 114px;
+    margin-top: -50px;
+}
+
+.button {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    position: absolute;
+    z-index: 999;
+}
+
+.hero__rocket {
+    width: 150px;
+    position: absolute;
+    right: 30%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+.about__back a img {
+    width: 60px;
+    height: 60px;
+    font-weight: 600;
+    left: 4%;
+    position: absolute;
+    top: 4%;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.hero__rocket_1 {
+    width: 150px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+.hero__rocket_2 {
+    width: 150px;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    animation: rocket 6s linear infinite;
+}
+
+.hero__rocket_3 {
+    width: 150px;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    animation: rocket 8s linear infinite;
+}
+
+.hero__rocket_4 {
+    width: 150px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 10s linear infinite;
+}
+
+.hero__rocket_5 {
+    width: 150px;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    animation: rocket 12s linear infinite;
+}
+
+.hero__rocket_6 {
+    width: 170px;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    animation: rocket 10s linear infinite;
+}
+
+.hero__rocket_7 {
+    width: 150px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 16s linear infinite;
+}
+
+.about__logo_1 {
+    width: 150px;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    animation: rocket 10s linear infinite;
+}
+
+.about__logo_2 {
+    width: 160px;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    animation: rocket 5s linear infinite;
+}
+
+.hero__launch-time {
+    display: flex;
+}
+
+.hero__launch-time div {
+    flex-basis: 130px;
+}
+
+.hero__launch-time div p {
+    font-size: 80px;
+    margin-bottom: -14px;
+}
+
+.write {
+    display: flex;
+}
+
+.contact {
+    background-color: #0f0142;
+    padding: 0 45px;
+    height: 80vh;
+    overflow-x: hidden;
+}
+
+.contact__contactusbox {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.contact__contactusbox ul {
+    list-style: none;
+}
+
+.contact__row-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__col {
+    width: 20%;
+    padding: 0 15px;
+    color: white;
+}
+
+.contact__col h4 {
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.contact__image {
+    height: 80px;
+}
+
+.contact__col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.contact__col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.contact__col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.contact__col ul li a:hover {
+    color: #fff;
+    padding: 5px;
+}
+
+.contact__col .social a img {
+    height: 100px;
+    width: 60px;
+    margin: -20px 10px 10px 0;
+    text-align: center;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.contact__cont-title {
+    display: flex;
+}
+
+.contact__cont-title .contact__image {
+    width: 80px;
+    height: 80px;
+    margin-top: 60px;
+}
+
+.contact__cont-title h1 {
+    margin: 50px 10px;
+}
+
+.contact__cont-title h1 a {
+    margin: 40px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact__cont-title h1 a:hover {
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.row2 {
+    margin-top: 30px;
+    display: flex;
+}
+
+.row2 .contact__col ul li {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.contact__col .contact__wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    margin: 50px 120px;
+    display: flex;
+}
+
+.contact__col .contact__wrapper ul {
+    list-style: none;
+}
+
+.contact__col .contact__wrapper ul li {
+    width: 80px;
+    height: 80px;
+    line-height: 10px;
+    margin: 0 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+.contact__wrapper ul li .fa {
+    color: #d8e2dc;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+
+/* instagram */
+
+.contact__wrapper ul li:hover .contact__instagram {
+    border: 3px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.contact__wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+
+/* google */
+
+.contact__wrapper ul li:hover.contact__mail {
+    border: 3px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+}
+
+.contact__wrapper ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+}
+
+.about__container {
+    background: url("../images/bg.png") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    padding: 0 2%;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    height: 110vh;
+    word-break: normal;
+}
+
+.about__text {
+    color: #fff;
+    width: 800px;
+    height: 800px;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.about__text h1 {
+    font-size: 50px;
+    margin-top: 200px;
+}
+
+.about__text p {
+    margin-top: 10px;
+}
+
+.about__content {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.thanks {
+    margin-top: 20px;
+}
+
+.about__text h1 span {
+    color: #ff375f;
+}
+
+.about__container img {
+    position: relative;
+    top: -2%;
+    right: 10%;
+    width: 200px;
+    height: 200px;
+}
+
+#about {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .about__container img {
+        position: relative;
+        top: 10%;
+        left: 17%;
+        width: 90px;
+        height: 90px;
+    }
+    .about__container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 110vh;
+    }
+    .about__container h1 {
+        margin: 10px auto;
+    }
+    .about__text p {
+        margin-top: 20px;
+    }
+    .contact {
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        height: 120vh;
+    }
+    .container__header__t-logo {
+        height: 80px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .container__header__rec-logo {
+        height: 80px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .hero {
+        top: 60%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .contact {
+        height: 100vh;
+        padding: 40px;
+    }
+    .hero h1 {
+        font-size: 47px;
+        font-weight: 600;
+    }
+    .contact__image {
+        width: 50px;
+    }
+    .hero__branch {
+        font-size: 1.1rem;
+    }
+    .contact__tagline_1 {
+        letter-spacing: 5px;
+        font-size: 15px;
+    }
+    .contact__contactusbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__contactusbox .contact__col:nth-child(2) {
+        margin-top: 30px;
+    }
+    .contact__contactusbox .contact__col:nth-child(4) {
+        font-size: 15px;
+    }
+    .rocket,
+    .rocket_1,
+    .rocket_2,
+    .rocket_3.about__logo_1,
+    .about__logo_2 {
+        width: 190px;
+    }
+    .contact__col {
+        margin-left: 40px;
+    }
+    .about__container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .about__container img {
+        top: 10%;
+        left: 25%;
+    }
+    #about {
+        margin-top: 140px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        height: 100vh;
+    }
+    .container__header__rec-logo {
+        height: 100px;
+        padding: 20px 0;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .hero {
+        top: 66%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .contact {
+        height: 75vh;
+        padding: 30px;
+    }
+    .hero h1 {
+        font-size: 44px;
+        font-weight: 600;
+    }
+    .contact__image {
+        width: 50px;
+    }
+    .hero__branch {
+        font-size: 1.2rem;
+    }
+    .contact__tagline_1 {
+        letter-spacing: 8px;
+        font-size: 15px;
+    }
+    .contact__contactusbox {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .contact__contactusbox .contact__col:nth-child(2) {
+        margin-top: 30px;
+    }
+    .contact__contactusbox .contact__col:nth-child(4) {
+        font-size: 15px;
+    }
+    .rocket,
+    .rocket_1,
+    .rocket_2,
+    .rocket_3 {
+        width: 190px;
+    }
+    .about__container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        height: 100vh;
+        width: 110vw;
+    }
+    .logo {
+        height: 90px;
+        padding: 20px 0;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .hero__launch-time div p {
+        font-size: 30px;
+        margin-bottom: -14px;
+    }
+    .hero {
+        top: 60%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .contact {
+        height: 110vh;
+        padding: 25px;
+        width: 110vw;
+    }
+    .hero h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .hero__branch {
+        font-size: 1rem;
+    }
+    .contact__tagline_1 {
+        letter-spacing: 8px;
+        font-size: 14px;
+    }
+    .hero__tagline {
+        letter-spacing: 8px;
+        font-size: 14px;
+        margin-top: -1px;
+    }
+    .contact__contactusbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__contactusbox .contact__col:nth-child(2) {
+        margin-top: 30px;
+    }
+    .contact__contactusbox .contact__col:nth-child(4) {
+        font-size: 15px;
+    }
+    .contact__row-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__col {
+        flex: 30%;
+        margin-top: 30px;
+    }
+    li {
+        font-size: 1rem;
+        white-space: break-spaces;
+    }
+    .rocket,
+    .rocket_1,
+    .rocket_2,
+    .rocket_3 {
+        width: 160px;
+    }
+    .about__container img {
+        position: relative;
+        top: 32%;
+        left: 32%;
+        width: 90px;
+        height: 90px;
+    }
+    .about__container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 130vh;
+    }
+    .about__text {
+        padding: 25px;
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    body {
+        overflow-x: hidden;
+    }
+    .about__container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 110vw;
+        overflow-x: hidden;
+    }
+    .about__container img {
+        position: relative;
+        top: 25%;
+        left: 32%;
+        width: 90px;
+        height: 90px;
+    }
+    .about__container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 130vh;
+    }
+    .about__text {
+        padding: 25px;
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        height: 100vh;
+        width: 110vw;
+    }
+    .logo {
+        height: 100px;
+        padding: 20px 0;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .hero__launch-time div p {
+        font-size: 60px;
+        margin-bottom: -14px;
+    }
+    .hero {
+        top: 60%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .contact {
+        height: 140vh;
+        padding: 25px;
+        width: 110vw;
+        overflow-x: hidden;
+    }
+    .hero h1 {
+        font-size: 42px;
+        font-weight: 600;
+    }
+    .hero__branch {
+        font-size: 1rem;
+    }
+    .contact__tagline_1 {
+        letter-spacing: 8px;
+        font-size: 14px;
+    }
+    .hero__tagline {
+        letter-spacing: 8px;
+        font-size: 14px;
+    }
+    .contact__contactusbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__contactusbox .contact__col:nth-child(2) {
+        margin-top: 30px;
+    }
+    .contact__contactusbox .contact__col:nth-child(4) {
+        font-size: 15px;
+    }
+    .contact__row-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__col {
+        flex: 30%;
+        margin-top: 30px;
+    }
+    li {
+        font-size: 1rem;
+    }
+    .rocket,
+    .rocket_1,
+    .rocket_2,
+    .rocket_3 {
+        width: 160px;
+    }
+    .about__container img {
+        position: relative;
+        top: 47%;
+        left: 10%;
+        width: 50px;
+        height: 50px;
+    }
+    .about__container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 110vw;
+        overflow-x: hidden;
+    }
+    .about__text h1 {
+        font-size: 35px;
+        padding: 20px;
+    }
+    .about__text p {
+        font-size: 15px;
+        padding: 10px;
+        white-space: normal;
+    }
+    .about__text {
+        padding: 25px;
+        margin-left: -10px;
+        margin-top: 50px;
+        width: 50%;
+    }
+    .about__text {
+        width: 440px;
+        margin-top: 220px;
+        margin-left: 30px;
+    }
+    .about__container {
+        height: 100vh;
+    }
+    .about__text {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .container__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40px;
+        height: 40px;
+        gap: 30px;
+        white-space: nowrap;
+    }
+    .logo {
+        height: 120px;
+        padding: 15px 0;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .container__header__l-logo {
+        width: 30px;
+        height: 30px;
+        margin-top: 50px;
+    }
+    body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .container {
+        height: 100vh;
+        width: 110vw;
+    }
+    .logo {
+        height: 100px;
+        padding: 20px 0;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .hero__launch-time div p {
+        font-size: 30px;
+        margin-bottom: -14px;
+    }
+    .hero {
+        top: 55%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .contact {
+        height: 110vh;
+        padding: 25px;
+    }
+    .hero h1 {
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .contact__cont-title h1 a {
+        margin: 40px 30px;
+        color: white;
+        font-size: 1.6rem;
+        text-decoration: none;
+    }
+    .hero__branch {
+        font-size: 0.8rem;
+    }
+    .contact__tagline_1 {
+        letter-spacing: 8px;
+        font-size: 14px;
+    }
+    .hero__tagline {
+        letter-spacing: 4px;
+        font-size: 14px;
+    }
+    .contact__contactusbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__contactusbox .contact__col:nth-child(2) {
+        margin-top: 30px;
+    }
+    .contact__contactusbox .contact__col:nth-child(4) {
+        font-size: 15px;
+    }
+    .contact__row-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__col {
+        flex: 30%;
+        margin-top: 30px;
+    }
+    li {
+        font-size: 1rem;
+    }
+    .contact__col ul li a {
+        font-size: 13px;
+    }
+    .contact__col h4 {
+        font-size: 1rem;
+    }
+    .rocket,
+    .rocket_1,
+    .rocket_2,
+    .rocket_3 {
+        width: 130px;
+    }
+    .about__text {
+        width: 400px;
+        margin-top: 120px;
+        margin-left: 30px;
+    }
+    .about__container img {
+        top: 30%;
+        width: 50px;
+        height: 50px;
+    }
+    .about__container {
+        height: 100vh;
+    }
+    .about__text {
+        font-size: 8px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .hero {
+        top: 40%;
+    }
+    .container__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40px;
+        height: 40px;
+        gap: 30px;
+    }
+    .logo {
+        height: 80px;
+        padding: 10px 0;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .container__header__l-logo {
+        width: 30px;
+        height: 30px;
+        margin-top: 50px;
+    }
+    body {
+        overflow-x: hidden;
+        white-space: nowrap;
+        max-width: 90vw;
+    }
+    .container {
+        height: 100vh;
+        width: 100vw;
+    }
+    .contact__cont-title .contact__image {
+        margin-top: 50px;
+    }
+    .logo {
+        height: 100px;
+        padding: 20px 0;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .hero__launch-time div p {
+        font-size: 38px;
+        margin-bottom: -14px;
+    }
+    .hero {
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .contact {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .contact__contactusbox ul {
+        list-style: none;
+        font-size: 0.6rem;
+    }
+    .hero h1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .hero__branch {
+        font-size: 0.7rem;
+    }
+    .contact__tagline_1 {
+        letter-spacing: 2px;
+        font-size: 12px;
+        white-space: normal;
+    }
+    button {
+        background: transparent;
+        border: 2px solid #fff;
+        outline: none;
+        padding: 8px 19px;
+        transition: all 0.4s ease-in-out;
+        gap: 30px;
+    }
+    .hero button a {
+        font-size: 0.8rem;
+    }
+    .hero__tagline {
+        letter-spacing: 1px;
+        font-size: 10px;
+        margin-top: -1px;
+    }
+    .contact__contactusbox {
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        margin-left: -20px;
+    }
+    .contact__contactusbox .contact__col:nth-child(2) {
+        margin-top: 30px;
+    }
+    .contact__contactusbox .contact__col:nth-child(4) {
+        font-size: 15px;
+    }
+    .contact__cont-title h1 a {
+        margin: 50px 30px;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .contact__row-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__col {
+        flex: 30%;
+        margin-top: 30px;
+    }
+    li {
+        font-size: 1rem;
+    }
+    .contact__cont-title h1 {
+        font-size: 23px;
+    }
+    .contact__col h4 {
+        font-size: 17px;
+    }
+    .contact__col ul li a {
+        font-size: 14px;
+    }
+    .rocket,
+    .rocket_1,
+    .rocket_2,
+    .rocket_3 {
+        width: 100px;
+    }
+    .about__text {
+        width: 450px;
+        margin-top: 120px;
+        margin-left: 40px;
+    }
+    .about__container img {
+        top: 28%;
+        left: 5%;
+        width: 50px;
+        height: 50px;
+    }
+    .about__container {
+        height: 110vh;
+    }
+    .about__text {
+        font-size: 10px;
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        height: 100vh;
+        width: 110vw;
+    }
+    .contact__cont-title .contact__image {
+        margin-top: 50px;
+    }
+    .logo {
+        height: 100px;
+        padding: 20px 0;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .hero__launch-time div p {
+        font-size: 41px;
+        margin-bottom: -14px;
+    }
+    .hero {
+        top: 55%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .hero__launch-time span {
+        font-size: 14px;
+    }
+    .contact {
+        height: 140vh;
+        width: 110vw;
+    }
+    .hero h1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .hero__branch {
+        font-size: 0.6rem;
+    }
+    .contact__tagline_1 {
+        letter-spacing: 3px;
+        font-size: 9px;
+        margin-left: 105px;
+        white-space: normal;
+    }
+    button {
+        background: transparent;
+        border: 2px solid #fff;
+        outline: none;
+        padding: 5px 15px;
+        transition: all 0.4s ease-in-out;
+        gap: 30px;
+    }
+    .hero button a {
+        font-size: 0.8rem;
+    }
+    .hero__tagline {
+        letter-spacing: 3px;
+        font-size: 9px;
+    }
+    .contact__contactusbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__contactusbox .contact__col:nth-child(2) {
+        margin-top: 80px;
+    }
+    .contact__contactusbox .contact__col:nth-child(4) {
+        font-size: 15px;
+    }
+    .contact__cont-title h1 a {
+        margin: 50px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    .contact__row-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__col {
+        flex: 30%;
+        margin-top: 30px;
+    }
+    .contact__col ul li a {
+        font-size: 0.8rem;
+    }
+    .contact__cont-title h1 {
+        font-size: 20px;
+    }
+    .contact__col h4 {
+        font-size: 17px;
+    }
+    .rocket,
+    .rocket_1,
+    .rocket_2,
+    .rocket_3 {
+        width: 80px;
+    }
+    .contact__contactusbox {
+        margin-left: -40px;
+    }
+    .about__text {
+        width: 440px;
+        margin-top: 120px;
+        margin-left: 30px;
+    }
+    .about__container img {
+        top: 30%;
+        width: 50px;
+        height: 50px;
+    }
+    .about__container {
+        height: 100vh;
+    }
+    .about__text {
+        font-size: 8px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40px;
+        height: 40px;
+        gap: 30px;
+    }
+    .logo {
+        height: 70px;
+        padding: 15px 0;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .container__header__l-logo {
+        width: 30px;
+        height: 30px;
+        margin-top: 30px;
+    }
+    body {
+        overflow-x: hidden;
+        max-width: 110vw;
+    }
+    .contact__cont-title .contact__image {
+        margin-top: 50px;
+    }
+    .hero__launch-time div p {
+        font-size: 41px;
+        margin-bottom: -14px;
+    }
+    .hero {
+        top: 55%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .hero__launch-time span {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .contact {
+        height: 130vh;
+    }
+    .hero h1 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .hero__branch {
+        font-size: 0.6rem;
+    }
+    .contact__tagline_1 {
+        letter-spacing: 6px;
+        font-size: 8px;
+        margin-left: 105px;
+    }
+    button {
+        background: transparent;
+        border: 2px solid #fff;
+        outline: none;
+        padding: 5px 15px;
+        transition: all 0.4s ease-in-out;
+        gap: 30px;
+    }
+    .hero button a {
+        font-size: 0.8rem;
+    }
+    .hero__tagline {
+        letter-spacing: 1px;
+        font-size: 9px;
+    }
+    .contact__contactusbox {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -10px;
+    }
+    .contact__contactusbox .contact__col:nth-child(2) {
+        margin-top: 70px;
+    }
+    .contact__contactusbox .contact__col:nth-child(4) {
+        font-size: 14px;
+    }
+    .contact__contactusbox .contact__col:nth-child(4) ul li {
+        font-size: 10px;
+    }
+    .contact__cont-title h1 a {
+        margin: 50px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .contact__col h4 {
+        font-size: 15px;
+    }
+    .contact__row-1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .contact__col {
+        flex: 30%;
+        margin-top: 30px;
+    }
+    .contact__col ul li a {
+        font-size: 0.7rem;
+    }
+    .contact__cont-title h1 {
+        font-size: 20px;
+    }
+    .hero__rocket,
+    .hero__rocket_1,
+    .hero__rocket_2,
+    .hero__rocket_3 {
+        width: 60px;
+    }
+    .about__text {
+        width: 440px;
+        margin-top: 120px;
+        margin-left: 30px;
+    }
+    .about__container img {
+        top: 30%;
+        width: 50px;
+        height: 50px;
+    }
+    .about__container {
+        height: 100vh;
+    }
+    .about__text {
+        font-size: 8px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    body {
+        overflow-x: hidden;
+        max-width: 120vw;
+    }
+    .container {
+        width: 150vw;
+    }
+    .contact__cont-title .contact__image {
+        margin-top: 50px;
+    }
+    .logo {
+        height: 100px;
+        padding: 20px 0;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .hero__launch-time div p {
+        font-size: 41px;
+        margin-bottom: -14px;
+    }
+    .hero {
+        top: 55%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .hero__launch-time span {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .contact {
+        height: 140vh;
+        width: 150vw;
+    }
+    .hero h1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .hero__branch {
+        font-size: 0.6rem;
+    }
+    .contact__tagline_1 {
+        letter-spacing: 6px;
+        font-size: 8px;
+        margin-left: 105px;
+    }
+    button {
+        background: transparent;
+        border: 2px solid #fff;
+        outline: none;
+        padding: 5px 15px;
+        transition: all 0.4s ease-in-out;
+        gap: 30px;
+    }
+    .hero button a {
+        font-size: 0.8rem;
+    }
+    .hero__tagline {
+        letter-spacing: 3px;
+        font-size: 9px;
+    }
+    .contact__contactusbox {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -10px;
+    }
+    .contact__contactusbox .contact__col:nth-child(2) {
+        margin-top: 70px;
+    }
+    .contact__contactusbox .contact__col:nth-child(4) {
+        font-size: 14px;
+    }
+    .contact__contactusbox .contact__col:nth-child(4) ul li {
+        font-size: 14px;
+    }
+    .contact__cont-title h1 a {
+        margin: 50px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .contact__col h4 {
+        font-size: 15px;
+    }
+    .contact__row-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact__col {
+        flex: 30%;
+        margin-top: 30px;
+    }
+    .contact__col ul li a {
+        font-size: 0.7rem;
+    }
+    .contact__cont-title h1 {
+        font-size: 20px;
+    }
+    .hero__rocket,
+    .hero__rocket_1,
+    .hero__rocket_2,
+    .hero__rocket_3 {
+        width: 60px;
+    }
+    .about__text {
+        width: 390px;
+        margin-top: 120px;
+        margin-left: 30px;
+    }
+    .about__container img {
+        top: 27%;
+        width: 40px;
+        height: 40px;
+        left: 20%;
+    }
+    .about__container {
+        height: 120vh;
+    }
+    .about__text {
+        font-size: 10px;
+        margin-left: 20px;
+    }
+}
